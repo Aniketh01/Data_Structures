@@ -13,7 +13,15 @@ public class Test {
 		s.push(10);
 		s.pop();
 		s.pop();
-		s.Display();
+//		s.Display();
+		
+		Queue Q = new Queue();
+		Q.Enqueue(100);
+		Q.Enqueue(200);
+		Q.dequeue();
+		
+		Q.dequeue();
+		Q.Display();
 		
 	}
 
