@@ -22,4 +22,13 @@ public class SinglyLinkedList {
 			}
 		}
 	}
+	
+	@SuppressWarnings("null")
+	public void insertAtHead(int item) {
+		Node newNode = null;
+		newNode.data = item;
+		newNode.next = head;
+		head = newNode;
+		
+	}
 }
