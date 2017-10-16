@@ -16,7 +16,7 @@ public class SinglyLinkedList {
 		else {
 			Node temp;
 			temp = head;
-			while(temp.next != null) {
+			while(temp != null) {
 				System.out.println(temp.data);
 				temp = temp.next;				
 			}
@@ -51,7 +51,7 @@ public class SinglyLinkedList {
 	
 	@SuppressWarnings("null")
 	public void insertAt(int item, int pos) {
-		int i = 0;
+		int i = 1;
 		Node newNode = new Node();
 		newNode.data = item;
 		newNode.next = null;
@@ -66,19 +66,20 @@ public class SinglyLinkedList {
 	}
 	
 	public void Delete(int pos) {
-		if (head == null) {
-			System.out.println("Linked list is already empty");
+		if (pos == 1) {
+			head = head.next;
 		}
 		else {
-			int i = 0;
+			int i = 1;
 			Node temp;
 			temp = head;
-			
+			Node temp2;
 			while(i < pos - 1) {
-				i++;
 				temp = temp.next;
+				i++;
 			}
-			temp.next = temp.next.next;
+			temp2 = temp.next;
+			temp.next = temp2.next;
 		}
 	}
 }
