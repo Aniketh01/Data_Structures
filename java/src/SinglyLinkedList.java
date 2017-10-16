@@ -4,7 +4,6 @@
  */
 public class SinglyLinkedList {
 	Node head;
-	Node temp;
 	
 	public SinglyLinkedList() {
 		head = null;
@@ -15,6 +14,7 @@ public class SinglyLinkedList {
 			return;
 		}
 		else {
+			Node temp;
 			temp = head;
 			while(temp.next != null) {
 				System.out.println(temp.data);
