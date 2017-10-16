@@ -29,6 +29,23 @@ public class SinglyLinkedList {
 		newNode.data = item;
 		newNode.next = head;
 		head = newNode;
-		
+	}
+	
+	@SuppressWarnings("null")
+	public void insertAtEnd(int item) {
+		Node newNode = null;
+		newNode.data = item;
+		newNode.next = null;
+		if (head == null) {
+			head = newNode;
+		}
+		else {
+			Node temp;
+			temp = head;
+			while (temp.next != null) {
+				temp = temp.next;
+			}
+			temp.next = newNode;
+		}
 	}
 }
