@@ -78,8 +78,7 @@ public class SinglyLinkedList {
 				temp = temp.next;
 				i++;
 			}
-			temp2 = temp.next;
-			temp.next = temp2.next;
+			temp.next = temp.next.next;
 		}
 	}
 }

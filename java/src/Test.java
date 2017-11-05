@@ -24,10 +24,11 @@ public class Test {
 //		Q.Display();
 		
 		SinglyLinkedList list = new SinglyLinkedList();
-		list.insertAtHead(0);
-		list.insertAtEnd(1);
+		list.insertAtHead(1);
 		list.insertAtEnd(2);
 		list.insertAtEnd(3);
+		list.insertAtEnd(4);
+		list.Delete(3);
 		list.Traversal();
 		
 	}
